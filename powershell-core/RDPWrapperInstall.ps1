@@ -31,7 +31,7 @@ Invoke-WebRequest -Uri $url -OutFile $output
 ""
 Write-Host "Downloading autoupdate.zip..." -ForegroundColor Yellow
 ""
-$url = "https://github.com/asmtron/rdpwrap/raw/master/autoupdate.zip"
+$url = "https://github.com/DavidBrockmeier/rdpwrap/raw/master/autoupdate.zip"
 $output = "$($env:TEMP)\autoupdate.zip"
 Invoke-WebRequest -Uri $url -OutFile $output
 ""
