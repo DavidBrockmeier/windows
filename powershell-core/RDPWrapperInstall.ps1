@@ -53,16 +53,6 @@ cmd /c "C:\Program Files\RDP Wrapper\autoupdate.bat"
 while ($disableUpdatesConfirm -ne "n" -and $disableUpdatesConfirm -ne "y") {
     $disableUpdatesConfirm = Read-Host "Disable Windows Updates? [y/n]"
 }
-if ($disableUpdatesConfirm -eq "y") {
-    ""
-    Write-Host "Stopping Windows Update Service..." -ForegroundColor Yellow
-    ""
-    Stop-Service wuauserv
-    ""
-    Write-Host "Disabling Windows Update Service..." -ForegroundColor Yellow
-    ""
-    Set-Service wuauserv -StartupType Disabled
-}
 ""
 Write-Host "RDPWrapper Install Complete" -ForegroundColor Green
 ""
