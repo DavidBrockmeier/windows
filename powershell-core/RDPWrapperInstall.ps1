@@ -50,9 +50,9 @@ Write-Host "Installing RDPWrapper..." -ForegroundColor Yellow
 Write-Host "Updating RDPWrapper..." -ForegroundColor Yellow
 ""
 cmd /c "C:\Program Files\RDP Wrapper\autoupdate.bat"
-while ($disableUpdatesConfirm -ne "n" -and $disableUpdatesConfirm -ne "y") {
-    $disableUpdatesConfirm = Read-Host "Disable Windows Updates? [y/n]"
-}
+# while ($disableUpdatesConfirm -ne "n" -and $disableUpdatesConfirm -ne "y") {
+#     $disableUpdatesConfirm = Read-Host "Disable Windows Updates? [y/n]"
+# }
 ""
 Write-Host "RDPWrapper Install Complete" -ForegroundColor Green
 ""
